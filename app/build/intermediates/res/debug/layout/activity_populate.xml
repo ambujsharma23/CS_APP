@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hk.ust.cse.comp107x.myapplication.populate"
+    android:background="@color/windowBackground">
+
+    <include android:id="@+id/toolbar"
+        layout="@layout/toolbar"></include>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Demo Page"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="false"
+        android:textSize="24dp"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/date"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="17dp"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/time"
+        android:layout_below="@+id/date"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="18dp" />
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/list"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/time" />
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:id="@+id/btnNext"
+        android:layout_below="@+id/list"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/time" />
+</RelativeLayout>
+<!-- From: file:/E:/Projects/Car_Service_Android_App/CS_App/app/src/main/res/layout/activity_populate.xml -->

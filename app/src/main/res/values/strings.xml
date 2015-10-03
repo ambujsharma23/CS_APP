@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+    <string-array name="friends">
+        <item>Ambuj</item>
+        <item>Roy</item>
+        <item>Dwivedi</item>
+        <item>Sharma</item>
+    </string-array>
+    <string-array name="brand">
+        <item>Honda</item>
+        <item>Hyundai</item>
+        <item>Maruti</item>
+        <item>Ford</item>
+    </string-array>
+    <string name="title_activity_populate">populate</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_show_user_profile">ShowUserProfile</string>
+    <string name="title_activity_brands">Brands</string>
+    <string name="title_activity_book_service">BookService</string>
+</resources>
