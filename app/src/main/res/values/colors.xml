@@ -7,4 +7,9 @@
     <color name="navigationBarColor">#000000</color>
     <color name="colorAccent">#428b28</color>
     <color name="backgroundColor">#939393</color>
+    <color name="primary">#3F51B5</color>
+    <color name="primary_dark">#303F9F</color>
+    <color name="accent">#3D5AFE</color>
+    <color name="msgleft">#ffe8d3c9</color>
+    <color name="msgright">#ffdac5d9</color>
 </resources>
