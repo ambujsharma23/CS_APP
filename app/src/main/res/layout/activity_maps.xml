@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/googleMap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.google.android.gms.maps.MapFragment"
+        android:layout_above="@+id/latlongLocation" />
+
+    <LinearLayout
+        android:id="@+id/locationMarker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+    </LinearLayout>
+
+    <!--<com.google.android.maps.MapView-->
+    <!--android:id="@+id/googleMap"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:enabled="true"-->
+    <!--android:clickable="true"-->
+    <!--android:layout_above="@+id/latlongLocation"-->
+    <!--android:apiKey="AIzaSyB2DAbnrg5_f5w1XNSgP9Be4y_yB0KYRPE"/>-->
+
+    <TextView
+        android:id="@+id/latlongLocation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:background="#ff058fff"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="#ffffffff"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" />
+
+    <TextView
+        android:id="@+id/locationMarkertext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner_map"
+        android:gravity="center"
+        android:minWidth="180dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:text=" Set your Location "
+        android:textColor="@android:color/white"
+        android:layout_above="@+id/imageView1"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/add_marker"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
