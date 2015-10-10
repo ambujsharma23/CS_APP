@@ -1,13 +1,16 @@
 package hk.ust.cse.comp107x.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class BookService extends ActionBarActivity {
+public class BookService extends ActionBarActivity implements View.OnClickListener {
     String[] brandname ={"Tata",
             "Fiat",
             "Ford",
@@ -47,9 +50,11 @@ public class BookService extends ActionBarActivity {
         }*/
         TextView BrandTitle = (TextView) findViewById(R.id.ChoosebrandName);
         ImageView Brandimage = (ImageView) findViewById(R.id.Choosebrand);
+        Button bookButton= (Button) findViewById(R.id.btnBook);
 
         BrandTitle.setText(brandname[pos]);
         Brandimage.setImageResource(imgid[pos]);
+        bookButton.setOnClickListener(this);
     }
 
 
@@ -74,5 +79,12 @@ public class BookService extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onClick(View v) {
+        Intent in=new Intent(this,MapsActivity.class);
+        startActivity(in);
+
     }
 }
